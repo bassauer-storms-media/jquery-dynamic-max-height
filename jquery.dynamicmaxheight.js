@@ -28,7 +28,6 @@
  * THE SOFTWARE.
  */
 
-
 ;(function($, document, window, undefined) {
 
   'use strict';
@@ -111,7 +110,8 @@
                 buttonText = itemButton.data( 'replace-text' );
             }
             else{
-                buttonText = itemButton.attr( 'title' );
+                //buttonText = itemButton.attr( 'title' );
+                buttonText = itemButton.data( 'replace-text-orig' );
             }
             itemButton.text(buttonText);
         }
